@@ -4,14 +4,12 @@
 #include <string>
 
 class Chef {
-private:
+protected:
     std::string name;
 
 public:
-    // Konstruktori
-    Chef(std::string name);
-
-    // Metodit
+    Chef(std::string chefName);
+    virtual ~Chef();
     void makeSalad();
     void makeSoup();
     std::string getName();
